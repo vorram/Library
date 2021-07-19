@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My Library</title>
+        <meta name="description" content="A small library app.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>My Library</h1>
+        </header>
+        <button id='new-book-btn'>New Book</button>
+        <main>
+            <div class="table">
+                <div class='table-header'>
+                    <span>Title</span>
+                    <span>Author</span>
+                    <span>Pages</span>
+                    <span>Date Added</span>
+                    <span>Read?</span>
+                </div>
+            </div>
+        </main>
+        <div id='blackout'></div>
+        <div id='new-book-form'>
+            <button id='close'>×</button>
+            <span class='new-book-header'>New Book</span>
+            <div class="title">
+                <p>Title:</p>
+                <input type='text' id='new-book-title' name='title' required minlength="1" maxlength="200">
+            </div>
+            <div class="author">
+                <p>Author:</p>
+                <input type='text' id='new-book-author' name='author' required minlength="1" maxlength="100">
+            </div>
+            <div class="pages">
+                <p>Number of pages:</p>
+                <input type='number' id='new-book-pages' name='pages' required min='1' max='10000'>
+            </div>
+            <div class="radio">
+            <p>Mark as read?</p>
+                <input type='radio' id='new-book-read' name='read' value='yes'>
+                <label for='new-book-read'>Yes</label>
+                <input type='radio' id='new-book-unread' name='read' value='no' checked>
+                <label for='new-book-unread'>No</label>
+            </div>
+            <button id='submit'>Submit</button>
+        </div>
+        <script src="script.js" async defer></script>
+    </body>
+</html>

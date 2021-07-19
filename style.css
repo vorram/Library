@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Uchen&display=swap');
+
+body {
+    background-color: burlywood;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: chocolate;
+    color: cornsilk;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    margin: 0;
+    height: fit-content;
+    font-size: 3em;
+    font-family: 'Uchen', serif;
+}
+
+main {
+    width: 94%;
+    min-height: 75vh;
+    background-color: rgba(255, 248, 220, 0.356);
+    margin-top: 20px;
+    border-radius: 16px;
+    padding: 1em;
+}
+
+.table-header {
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr 0.5fr 0.75fr 0.75fr 0.5fr 0.5fr;
+    text-align: center;
+    background-color: rgb(206, 92, 11);
+    color: cornsilk;
+    font-size: 1.5em;
+    font-family: 'Uchen', serif;
+    margin-top: 10px;
+    column-gap: 10px;
+}
+
+.table-entry {
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr 0.5fr 0.75fr 0.75fr 0.5fr 0.5fr;
+    text-align: center;
+    background-color: rgb(223, 180, 124);
+    font-size: 1.2em;
+    min-height: 50px;
+    margin-top: 6px;
+    column-gap: 10px;
+    font-family: Garamond, serif;
+}
+
+.table-entry button {
+    background-color: rgb(180, 139, 100);
+    font-family: 'Uchen', serif;
+    color: white;
+    font-size: 0.8em;
+    font-weight: bold;
+    border-width: medium;
+}
+
+.table-entry button:hover {
+    background-color: rgb(150, 116, 84);
+}
+
+.table-entry span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.table-header span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main label {
+    font-family: Garamond, serif;
+    font-size: 1.2em;
+}
+
+main select {
+    width: 160px;
+    height: 30px;
+}
+
+#new-book-btn {
+    width: 180px;
+    height: 60px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border-width: thick;
+    font-family: 'Uchen', serif;
+    font-size: 1.3em;
+    background-color: rgb(180, 139, 100);
+    color: white;
+    font-weight: bold;
+}
+
+#new-book-btn:hover {
+    background-color: rgb(150, 116, 84);
+}
+
+#blackout {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(92, 92, 92, 0.603);
+    top: 0;
+    z-index: 0;
+    display: none; 
+}
+
+#new-book-form {
+    position: fixed;
+    width: 480px;
+    background-color: burlywood;
+    padding: 1em;
+    font-family: 'Uchen', serif;
+    font-size: 1.5em;
+    border-radius: 16px;
+    text-align: center;
+    display: none; 
+}
+
+#new-book-form div {
+    background-color: rgb(180, 139, 100);
+    border-radius: 12px;
+    color: ivory;
+    margin-top: 10px;
+    padding: 1em;
+    text-align: start;
+}
+
+#new-book-form div p {
+    margin: 0;
+}
+
+.new-book-header {
+    font-size: 2em;
+}
+
+#new-book-title, #new-book-author, #new-book-pages {
+    width: 98%;
+    font-size: 1em;
+    background-color: blanchedalmond;
+}
+
+.radio input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: blanchedalmond;
+}
+
+.radio input:checked {
+    border: 6px solid rgb(223, 169, 90);
+}
+
+#close {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    color: whitesmoke;
+    font-size: 3em;
+    background-color: transparent;
+    border-style: none;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+}
+
+#close:hover {
+    color: rgb(185, 185, 185);
+}
+
+#submit {
+    background-color: rgb(180, 139, 100);
+    font-family: 'Uchen', serif;
+    color: white;
+    font-size: 1.25em;
+    width: 200px;
+    margin-top: 10px;
+    border-width: medium;
+}
