@@ -1,12 +1,23 @@
 let myLibrary = [];
 
-function Book(title, author, pages, isRead) {
+/* function Book(title, author, pages, isRead) {
     this.title = title;
     this.author = author;
     this.pages = pages;
     this.isRead = isRead;
     let currentDate = new Date();
     this.date = currentDate.toLocaleDateString('ru-RU');
+} */
+
+class Book {
+    constructor(title, author, pages, isRead) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.isRead = isRead;
+    }
+    currentDate = new Date();
+    date = currentDate.toLocaleDateString('ru-RU');
 }
 
 const newBookBtn = document.querySelector('#new-book-btn');
