@@ -15,9 +15,9 @@ class Book {
         this.author = author;
         this.pages = pages;
         this.isRead = isRead;
+        let currentDate = new Date();
+        this.date = currentDate.toLocaleDateString('ru-RU');
     }
-    currentDate = new Date();
-    date = currentDate.toLocaleDateString('ru-RU');
 }
 
 const newBookBtn = document.querySelector('#new-book-btn');
